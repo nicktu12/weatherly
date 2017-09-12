@@ -1,0 +1,9 @@
+* {
+  align-content: center;
+  color: yellow;
+}
+
+.appContainer {
+  background-image: url('../assets/woodBG.jpg');
+
+}
