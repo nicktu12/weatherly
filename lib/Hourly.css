@@ -1,0 +1,23 @@
+.hourlyContainer {
+  font-size: 24px;
+  color: blue;
+  display: inline-flex;
+  flex: wrap;
+}
+
+.hourlyCard1 {
+  border: 1px black solid;
+  height: 200px;
+  width: 150px;
+  display: inline;
+  text-align: center;
+}
+
+.hourlyIcon {
+  width: 50px;
+
+}
+
+p {
+  font-size: 16px;
+}
