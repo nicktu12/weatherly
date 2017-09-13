@@ -8,6 +8,9 @@ $dark-accent: rgba(91, 86, 161, 1);
 $pop-accent: rgba(246, 118, 167, 1);
 $light-accent: rgba(221, 210, 230, 1);
 
+// TABLE OF CONTENTS
+// UNIVERSAL SELECTORS
+// CARDS
 
 * {
   align-content: center;
@@ -40,4 +43,30 @@ h1 {
   background-color: $deep-primary-alpha;
   text-align: center;
   height: 100vh;
+}
+
+// CARDS
+
+.hourlyContainer {
+  font-size: 24px;
+  color: blue;
+  display: inline-flex;
+  flex: wrap;
+}
+
+.hourlyCard1 {
+  border: 1px black solid;
+  height: 200px;
+  width: 150px;
+  display: inline;
+  text-align: center;
+}
+
+.hourlyIcon {
+  width: 50px;
+
+}
+
+p {
+  font-size: 16px;
 }
