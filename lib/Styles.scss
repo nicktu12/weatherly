@@ -19,8 +19,8 @@ $light-accent: rgba(221, 210, 230, 1);
 }
 
 body {
-  // background-image: url('../assets/8bitrainBG.gif');
-  background-image: url('../assets/8bitstatic.jpg');
+  background-image: url('../assets/8bitrainBG.gif');
+  // background-image: url('../assets/8bitstatic.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -69,4 +69,10 @@ h1 {
 
 p {
   font-size: 16px;
+}
+
+// DISABLE
+
+.disable {
+  display: none;
 }
