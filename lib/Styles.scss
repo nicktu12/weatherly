@@ -7,6 +7,8 @@ $neutral-light: rgba(252, 252, 254, 1);
 $dark-accent: rgba(91, 86, 161, 1);
 $pop-accent: rgba(246, 118, 167, 1);
 $light-accent: rgba(221, 210, 230, 1);
+$margin: 15px;
+$bradius: 5px;
 
 // TABLE OF CONTENTS
 // UNIVERSAL SELECTORS
@@ -34,42 +36,76 @@ button {
 
 input {
   color: $true-primary;
+  width: 195px;
 }
 
 h1 {
   padding-top: 200px;
+  padding-bottom: 25px;
 }
 
 .welcome-container {
   background-color: $deep-primary-alpha;
   text-align: center;
-  height: 100vh;
+  height: calc(100vh - 30px);
+  margin: $margin;
+  box-sizing: border-box;
+  border-radius: $bradius
+}
+
+.welcome-container p {
+  color: $light-accent;
+}
+
+.welcome-search {
+  padding: 5px;
 }
 
 // CARDS
 
-.hourlyContainer {
-  font-size: 24px;
-  color: blue;
-  display: inline-flex;
-  flex: wrap;
+.parent-div {
+  position: relative;
 }
 
-.hourlyCard1 {
-  border: 1px black solid;
-  height: 200px;
+.current-container {
+  width: 320px;
+  height: calc(100vh - 30px);
+  background-color: $deep-primary-alpha;
+  margin: $margin;
+  border-radius: $bradius
+}
+
+.hourly-container {
+  position: absolute;
+  top: -3px;
+  left: 350px;
+  display: flex;
+  width: calc(100vw - 360px);
+}
+
+.daily-container {
+  display: flex;
+  width: calc(100vw - 360px);
+}
+
+.daily-div {
+  position: absolute;
+  top: 48vh;
+  left: 350px;
+  display: flex;
+}
+
+.card {
+  height: 47vh;
   width: 150px;
-  display: inline;
   text-align: center;
+  background-color: $deep-primary-alpha;
+  margin: 3px;
+  border-radius: $bradius
 }
 
 .hourlyIcon {
   width: 50px;
-
-}
-
-p {
-  font-size: 16px;
 }
 
 // DISABLE
