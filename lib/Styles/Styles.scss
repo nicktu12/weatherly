@@ -69,11 +69,24 @@ h1 {
 
 .current-container {
   width: 320px;
-  height: calc(100vh - 30px);
+  height: calc(66vh - 30px);
   background-color: $deep-primary-alpha;
   margin: $margin;
-  border-radius: $bradius
+  border-radius: $bradius;
 }
+
+.current-container span {
+  color: $light-accent;
+}
+
+.current-container .hi {
+  color: $pop-accent;
+}
+
+.current-container .low {
+  color: $light-primary;
+}
+
 
 .hourly-container {
   position: absolute;
@@ -81,22 +94,24 @@ h1 {
   left: 350px;
   display: flex;
   width: calc(100vw - 360px);
+  height: 100%;
 }
 
 .daily-container {
   display: flex;
-  width: calc(100vw - 360px);
+  width: calc(100vw - 22px);
 }
 
 .daily-div {
   position: absolute;
-  top: 48vh;
-  left: 350px;
+  top: 63vh;
+  left: 12px;
   display: flex;
+  height: 33vh;
 }
 
 .card {
-  height: 47vh;
+  height: 100%;
   width: 150px;
   text-align: center;
   background-color: $deep-primary-alpha;
