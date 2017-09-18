@@ -10,7 +10,7 @@ describe('Search functionality', () => {
 
     expect(shallowSearch.state('inputLocation')).toEqual('');
   })
-
+  
   // it.skip('should change state when string is inputted', () => {
   //   let input = shallowSearch.find('input')
   //
