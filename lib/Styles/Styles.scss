@@ -116,11 +116,15 @@ h1 {
   text-align: center;
   background-color: $deep-primary-alpha;
   margin: 3px;
-  border-radius: $bradius
+  border-radius: $bradius;
 }
 
 .hourlyIcon {
   width: 50px;
+}
+
+.card div {
+  color: $light-accent;
 }
 
 // DISABLE
