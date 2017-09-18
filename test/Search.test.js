@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from '../lib/Search.js';
+import Search from '../lib/Components/Search.js';
 import { shallow, mount } from 'enzyme';
 
 describe('Search functionality', () => {
@@ -12,10 +12,11 @@ describe('Search functionality', () => {
   })
 
   it('should change state when string is inputted', () => {
+    console.log(shallowSearch.debug());
     let input = shallowSearch.find('input')
 
-    expect(shallowSearch.state('inputLocation')).toEqual('');
 
+    expect(shallowSearch.state('inputLocation')).toEqual('');
     let event = { target: { value: 'Denver, CO' } }
 
     input.simulate('change', event)

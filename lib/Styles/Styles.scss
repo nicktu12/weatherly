@@ -49,7 +49,6 @@ h1 {
   text-align: center;
   height: calc(100vh - 30px);
   margin: $margin;
-  box-sizing: border-box;
   border-radius: $bradius
 }
 
@@ -95,6 +94,15 @@ h1 {
   color: $light-primary;
 }
 
+.simple-div {
+  display: none;
+}
+
+.simple-div > div {
+  background-color: $deep-primary-alpha;
+  margin: $margin;
+  border-radius: $bradius
+}
 
 .hourly-container {
   position: absolute;
@@ -116,11 +124,12 @@ h1 {
   left: 12px;
   display: flex;
   height: 33vh;
+  width: 98.8vw;
 }
 
 .card {
   height: 100%;
-  width: 150px;
+  width: 100%;
   text-align: center;
   background-color: $deep-primary-alpha;
   margin: 3px;
@@ -144,4 +153,24 @@ h1 {
 
 .enable {
   display: initial;
+}
+
+@media only screen and (max-width: 850px) {
+
+  .current-div {
+    display: none;
+  }
+
+  .hourly-container {
+    display: none;
+  }
+
+  .daily-div {
+    display: none;
+  }
+
+  .simple-div {
+    display: initial;
+  }
+
 }
