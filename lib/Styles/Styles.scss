@@ -34,6 +34,10 @@ button {
   border: none;
 }
 
+.current-container div button {
+  margin-left: 10px;
+}
+
 input {
   color: $true-primary;
   width: 195px;
@@ -52,12 +56,33 @@ h1 {
   border-radius: $bradius
 }
 
+.Select {
+  padding: 10px;
+  margin-bottom: -10px;
+}
+
 .welcome-container p {
   color: $light-accent;
 }
 
 .welcome-search {
   padding: 5px;
+}
+
+.current-location {
+  font-size: 26px
+}
+
+.current-temp {
+  font-size: 45px;
+}
+
+.current-zip {
+  margin-top: -18px;
+}
+
+.current-string {
+  font-size: 12px;
 }
 
 // CARDS
@@ -67,22 +92,24 @@ h1 {
 }
 
 .current-container {
-  width: 320px;
-  height: calc(66vh - 30px);
+  width: 450px;
+  height: 440px;
   background-color: $deep-primary-alpha;
   margin: $margin;
   border-radius: $bradius;
 }
 
-.current-container span {
+.current-container p {
   color: $light-accent;
+  padding: 10px;
 }
 
-.current-container .hi {
+.current-hi-lo .hi {
   color: $pop-accent;
+  padding-right: 10px;
 }
 
-.current-container .low {
+.current-hi-lo .low {
   color: $light-primary;
 }
 
@@ -94,23 +121,20 @@ h1 {
   color: $light-primary;
 }
 
-.simple-div {
-  display: none;
+tr .hi {
+  color: $pop-accent;
 }
 
-.simple-div > div {
-  background-color: $deep-primary-alpha;
-  margin: $margin;
-  border-radius: $bradius
+tr .low {
+  color: $light-primary;
 }
 
-.hourly-container {
-  position: absolute;
-  top: -3px;
-  left: 350px;
+.hourly-div {
   display: flex;
-  width: calc(100vw - 360px);
   height: 100%;
+  margin-left: 12px;
+  margin-top: -8px;
+  width: 97%;
 }
 
 .daily-container {
@@ -120,20 +144,36 @@ h1 {
 
 .daily-div {
   position: absolute;
-  top: 63vh;
-  left: 12px;
-  display: flex;
-  height: 33vh;
-  width: 98.8vw;
+  background-color: $deep-primary-alpha;
+  top: 0;
+  left: 470px;
+  border-radius: $bradius;
 }
 
 .card {
-  height: 100%;
+  height: 150px;
   width: 100%;
   text-align: center;
   background-color: $deep-primary-alpha;
   margin: 3px;
   border-radius: $bradius;
+}
+
+.card p {
+  color: $light-accent;
+}
+
+.card-hour {
+  margin-top: 10px;
+}
+
+.card-condition {
+  font-size: 12px;
+  height: 45px;
+}
+
+.card-temp {
+
 }
 
 .hourlyIcon {
@@ -144,24 +184,105 @@ h1 {
   color: $light-accent;
 }
 
-// DISABLE
+.table-day {
+  width: 155px;
+}
 
-.disable {
+.table-icon {
+  width: 40px
+}
+
+.table-icon img {
+  height: 32px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.table-hi, .table-lo {
+  width: 140px;
+}
+
+td {
+  color: $light-accent;
+  font-size: 12px;
+}
+
+// Simplified
+
+.simple-div {
   display: none;
-  font-size: 60px;
 }
 
-.enable {
-  display: initial;
+.simple-current tbody, .simple-current tr, .simple-current tr {
+  color: $light-accent;
 }
 
-@media only screen and (max-width: 850px) {
+.simple-div > table {
+  background-color: rgba(22, 7, 76, 0.7);
+  margin: 15px;
+  margin-left: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.simple-hour {
+  width: 110px
+}
+
+.simple-hour-temp{
+  width: 75px;
+}
+
+.simple-day {
+  width: 80px
+}
+
+.simple-day-hi {
+  width: 100px;
+}
+
+.simple-day-lo {
+  width: 100px;
+}
+
+.simple-zip {
+  padding-left: 10px;
+  color: $light-accent;
+}
+
+.simple-hourly td {
+  height: 35px;
+}
+
+.simple-daily td {
+  height: 35px;
+}
+
+.simple-current .lo {
+  color: $light-primary;
+}
+
+.simple-day-lo .lo {
+  color: $light-primary;
+}
+
+.simple-last {
+  background-color: $deep-primary-alpha;
+  margin: $margin;
+  border-radius: $bradius;
+  color: $light-accent;
+  font-size: 12px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 850px), screen and (max-height: 610px) {
 
   .current-div {
     display: none;
   }
 
-  .hourly-container {
+  .hourly-div {
     display: none;
   }
 

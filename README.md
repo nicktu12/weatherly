@@ -1,31 +1,44 @@
-# React Starter Kit
+# Weatherly
 
-To install the dependencies:
+## Team:
 
-```
-npm install
-```
+Nick Teets & Sam Singer
 
-To fire up a development server:
+## Project Requirements
 
-```
-npm start
-```
+#### Goals
 
-Once the server is running, you can visit:
+-Utilize ReactJS to create a weather app that allows a user to select a city and see current, hourly and daily weather forecasts.
 
-* `http://localhost:8080/webpack-dev-server/` to run your application.
-* `http://localhost:8080/webpack-dev-server/test.html` to run your test suite in the browser.
+-Implement working search trie for autocomplete functionality on a search bar
 
-To build the static files:
+-Prioritize TDD using Enzyme and Jest for testing in React
 
-```js
-npm run build
-```
+-Implement CSS preprocessor to style page
 
+#### Features
 
-To run tests in Node:
+-Allow user to select city to see weather forecast
 
-```js
-npm test
-```
+-Store last searched location in local storage to populate forecast data on page load
+
+#### Code Organization
+
+-Implement different component classes for each section of the weather app
+
+#### Testing
+
+-Utilize TDD best practices while testing with Enzyme and Jest
+
+#### Built with:
+React
+Enzyme
+Jest
+Scss
+Webpack
+
+### Welcome page
+
+### Weather forecast
+
+### Simplified View
