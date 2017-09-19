@@ -8,6 +8,8 @@ Nick Teets & Sam Singer
 
 #### Goals
 
+-Design weather app with UX and UI in mind
+
 -Utilize ReactJS to create a weather app that allows a user to select a city and see current, hourly and daily weather forecasts.
 
 -Implement working search trie for autocomplete functionality on a search bar
@@ -36,6 +38,10 @@ Enzyme
 Jest
 Scss
 Webpack
+
+### Design Wireframes 
+
+![img_6333](https://user-images.githubusercontent.com/26471447/30620108-868e8a1a-9d60-11e7-8918-ffcbc1edfe7a.JPG)
 
 ### Welcome page
 
