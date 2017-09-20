@@ -1,0 +1,41 @@
+.current-container div button {
+  margin-left: 20px;
+}
+
+.current-container {
+  width: 37vw;
+  height: 67vh;
+  background-color: $deep-primary-alpha;
+  margin: $margin;
+  border-radius: $bradius;
+}
+
+.current-container p {
+  color: $light-accent;
+  padding: 10px;
+}
+
+.current-location {
+  font-size: 26px
+}
+
+.current-temp {
+  font-size: 45px;
+}
+
+.current-zip {
+  margin-top: -18px;
+}
+
+.current-string {
+  font-size: 12px;
+}
+
+.current-hi-lo .hi {
+  color: $pop-accent;
+  padding-right: 10px;
+}
+
+.current-hi-lo .low {
+  color: $light-primary;
+}

@@ -1,0 +1,99 @@
+.simple-div {
+  display: none;
+}
+
+.simple-current tbody, .simple-current tr, .simple-current tr {
+  color: $light-accent;
+}
+
+.simple-div > table {
+  background-color: rgba(22, 7, 76, 0.7);
+  margin: 15px;
+  margin-left: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.simple-hour {
+  width: 110px
+}
+
+.simple-hour-temp{
+  width: 75px;
+}
+
+.simple-day {
+  width: 95px
+}
+
+.simple-day-hi, .simple-day-lo {
+  width: 100px;
+}
+
+.simple-zip {
+  padding-left: 10px;
+  color: $light-accent;
+}
+
+.simple-hourly td {
+  height: 35px;
+  text-align: initial;
+}
+
+.simple-daily td {
+  height: 35px;
+  text-align: initial;
+}
+
+.simple-current .lo {
+  color: $light-primary;
+}
+
+.simple-day-lo .lo {
+  color: $light-primary;
+}
+
+.simple-last {
+  background-color: $deep-primary-alpha;
+  margin: $margin;
+  border-radius: $bradius;
+  color: $light-accent;
+  font-size: 10px;
+  padding: 5px;
+  height: 20px;
+}
+
+.simple-hourly {
+  position: relative;
+}
+
+.simple-hourly tbody, .simple-daily tbody {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: $light-accent;
+}
+
+.simple-daily {
+  position: relative;
+}
+
+.simple-div .Select {
+  background-color: $deep-primary-alpha;
+  width: 100%;
+  border-radius: $bradius;
+  padding-bottom: 20px;
+}
+
+.simple-div div button {
+  position: absolute;
+  bottom: 40px;
+  left: 18px;
+  width: 128px;
+}
+
+.simple-div {
+  position: relative;
+}

@@ -1,0 +1,43 @@
+.daily-div {
+  position: absolute;
+  background-color: $deep-primary-alpha;
+  top: 0;
+  left: calc(37vw + 30px);
+  border-radius: $bradius;
+}
+
+.table-day {
+  width: 144px;
+  padding-left: 5px;
+}
+
+.table-date {
+  width: 35px;
+}
+
+.table-icon {
+  width: 40px
+}
+
+.table-icon img {
+  height: 32px;
+  padding-right: 36px;
+  padding-left: 30px;
+}
+
+.table-hi, .table-lo {
+  width: 109px;
+}
+
+.table-low {
+  margin-right: 5px;
+}
+
+.table-icon {
+  text-align: center;
+}
+
+td {
+  color: $light-accent;
+  font-size: 12px;
+}
