@@ -10,16 +10,4 @@ describe('Search functionality', () => {
     expect(shallowSearch.state('inputLocation')).toEqual('');
   })
 
-  // it.skip('should change state when string is inputted', () => {
-  //   let input = shallowSearch.find('input')
-  //
-  //   expect(shallowSearch.state('inputLocation')).toEqual('');
-  //
-  //   let event = { target: { value: 'Denver, CO' } }
-  //
-  //   input.simulate('change', event)
-  //
-  //   expect(shallowSearch.state('inputLocation')).toEqual('Denver, CO');
-  // })
-
 })
