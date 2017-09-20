@@ -1,0 +1,15 @@
+.welcome-container {
+  background-color: $deep-primary-alpha;
+  text-align: center;
+  height: calc(100vh - 30px);
+  margin: $margin;
+  border-radius: $bradius
+}
+
+.welcome-container p {
+  color: $light-accent;
+}
+
+.welcome-search {
+  padding: 5px;
+}

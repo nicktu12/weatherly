@@ -1,18 +1,12 @@
-$font-default: 'Press Start 2P', cursive;
-$deep-primary: rgba(22, 7, 76, 1);
-$deep-primary-alpha: rgba(22, 7, 76, .7);
-$true-primary: rgba(64, 23, 251, 1);
-$light-primary: rgba(69, 150, 254, 1);
-$neutral-light: rgba(252, 252, 254, 1);
-$dark-accent: rgba(91, 86, 161, 1);
-$pop-accent: rgba(246, 118, 167, 1);
-$light-accent: rgba(221, 210, 230, 1);
-$margin: 15px;
-$bradius: 5px;
-
-// TABLE OF CONTENTS
-// UNIVERSAL SELECTORS
-// CARDS
+@import 'Vars';
+@import 'Card';
+@import 'Current';
+@import 'Daily';
+@import 'Hourly';
+@import 'Select';
+@import 'Simplified';
+@import 'Welcome';
+@import 'MediaQueries';
 
 * {
   align-content: center;
@@ -34,10 +28,6 @@ button {
   border: none;
 }
 
-.current-container div button {
-  margin-left: 10px;
-}
-
 input {
   color: $true-primary;
   width: 195px;
@@ -48,250 +38,16 @@ h1 {
   padding-bottom: 25px;
 }
 
-.welcome-container {
-  background-color: $deep-primary-alpha;
-  text-align: center;
-  height: calc(100vh - 30px);
-  margin: $margin;
-  border-radius: $bradius
-}
-
-.Select {
-  padding: 10px;
-  margin-bottom: -10px;
-}
-
-.welcome-container p {
-  color: $light-accent;
-}
-
-.welcome-search {
-  padding: 5px;
-}
-
-.current-location {
-  font-size: 26px
-}
-
-.current-temp {
-  font-size: 45px;
-}
-
-.current-zip {
-  margin-top: -18px;
-}
-
-.current-string {
-  font-size: 12px;
-}
-
-// CARDS
-
 .parent-div {
   position: relative;
 }
 
-.current-container {
-  width: 450px;
-  height: 440px;
-  background-color: $deep-primary-alpha;
-  margin: $margin;
-  border-radius: $bradius;
-}
-
-.current-container p {
-  color: $light-accent;
-  padding: 10px;
-}
-
-.current-hi-lo .hi {
-  color: $pop-accent;
-  padding-right: 10px;
-}
-
-.current-hi-lo .low {
-  color: $light-primary;
-}
-
-.card .hi {
-  color: $pop-accent;
-}
-
-.card .low {
-  color: $light-primary;
-}
-
 tr .hi {
   color: $pop-accent;
+      margin-left: -11px;
 }
 
 tr .low {
   color: $light-primary;
-}
-
-.hourly-div {
-  display: flex;
-  height: 100%;
-  margin-left: 12px;
-  margin-top: -8px;
-  width: 97%;
-}
-
-.daily-container {
-  display: flex;
-  width: calc(100vw - 22px);
-}
-
-.daily-div {
-  position: absolute;
-  background-color: $deep-primary-alpha;
-  top: 0;
-  left: 470px;
-  border-radius: $bradius;
-}
-
-.card {
-  height: 150px;
-  width: 100%;
-  text-align: center;
-  background-color: $deep-primary-alpha;
-  margin: 3px;
-  border-radius: $bradius;
-}
-
-.card p {
-  color: $light-accent;
-}
-
-.card-hour {
-  margin-top: 10px;
-}
-
-.card-condition {
-  font-size: 12px;
-  height: 45px;
-}
-
-.card-temp {
-
-}
-
-.hourlyIcon {
-  width: 50px;
-}
-
-.card div {
-  color: $light-accent;
-}
-
-.table-day {
-  width: 155px;
-}
-
-.table-icon {
-  width: 40px
-}
-
-.table-icon img {
-  height: 32px;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-.table-hi, .table-lo {
-  width: 140px;
-}
-
-td {
-  color: $light-accent;
-  font-size: 12px;
-}
-
-// Simplified
-
-.simple-div {
-  display: none;
-}
-
-.simple-current tbody, .simple-current tr, .simple-current tr {
-  color: $light-accent;
-}
-
-.simple-div > table {
-  background-color: rgba(22, 7, 76, 0.7);
-  margin: 15px;
-  margin-left: 0px;
-  border-radius: 5px;
-  padding: 5px;
-  width: 100%;
-}
-
-.simple-hour {
-  width: 110px
-}
-
-.simple-hour-temp{
-  width: 75px;
-}
-
-.simple-day {
-  width: 80px
-}
-
-.simple-day-hi {
-  width: 100px;
-}
-
-.simple-day-lo {
-  width: 100px;
-}
-
-.simple-zip {
-  padding-left: 10px;
-  color: $light-accent;
-}
-
-.simple-hourly td {
-  height: 35px;
-}
-
-.simple-daily td {
-  height: 35px;
-}
-
-.simple-current .lo {
-  color: $light-primary;
-}
-
-.simple-day-lo .lo {
-  color: $light-primary;
-}
-
-.simple-last {
-  background-color: $deep-primary-alpha;
-  margin: $margin;
-  border-radius: $bradius;
-  color: $light-accent;
-  font-size: 12px;
-  padding: 5px;
-}
-
-@media only screen and (max-width: 850px), screen and (max-height: 610px) {
-
-  .current-div {
-    display: none;
-  }
-
-  .hourly-div {
-    display: none;
-  }
-
-  .daily-div {
-    display: none;
-  }
-
-  .simple-div {
-    display: initial;
-  }
-
+      margin-left: -11px;
 }
