@@ -1,7 +1,6 @@
 import React from 'react';
 import Daily from '../lib/Components/Daily';
 import { shallow, mount } from 'enzyme';
-//
 
 describe ('Daily functionality', () => {
   let wrapper;
@@ -17,7 +16,6 @@ beforeEach(() => {
     high = {90}
     low = {70}
     />);
-    console.log(wrapper.debug());
 });
 
 it('should exist', () => {
