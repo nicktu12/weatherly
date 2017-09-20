@@ -1,0 +1,30 @@
+.card {
+  height: 27vh;
+  width: 100%;
+  text-align: center;
+  background-color: $deep-primary-alpha;
+  margin: 3px;
+  border-radius: $bradius;
+}
+
+.card p {
+  color: $light-accent;
+}
+
+.card-hour {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.card-condition {
+  font-size: 12px;
+  height: 45px;
+}
+
+.card img {
+  padding: 10px;
+}
+
+.card div {
+  color: $light-accent;
+}
