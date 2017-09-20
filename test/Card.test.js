@@ -4,63 +4,50 @@ import { shallow, mount } from 'enzyme';
 
 describe ('Card functionality', () => {
 
+const shallowCard = shallow(<Card hourlyTemp='87'
+                                  hour='9:00 AM'
+                                  icon='sunny.png'
+                                  condition='Party Cloudy'
+                                  key=''/>);
+
   it('should should be a function', () => {
     expect(typeof(Card)).toEqual('function');
   });
 
+  it('should display the time', () => {
+    const time = shallowCard.find('.card-hour');
+
+    expect(time.text()).toEqual('9:00 AM');
+  });
+
+  it('should display the condition', () => {
+    const condition = shallowCard.find('.card-condition');
+
+    expect(condition.text()).toEqual('Party Cloudy');
+  });
+
+  it('should display the temperature', () => {
+    const temp = shallowCard.find('.card-temp');
+
+    expect(temp.text()).toEqual('87°F');
+  });
+
+  it('should contain one container div', () => {
+    const div = shallowCard.find('div');
+
+    expect(div.length).toEqual(1);
+  });
+
+  it('should contain one img', () => {
+    const img = shallowCard.find('img');
+
+    expect(img.length).toEqual(1);
+  });
+
+  it('should contain three p tags', () => {
+    const p = shallowCard.find('p');
+
+    expect(p.length).toEqual(3);
+  });
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// describe('Card functionality', () => {
-//
-//   const shallowCard = shallow(<Card time='9:40'
-//                                     condition='sunny'
-//                                     img='sunny.png'
-//                                     temp='84 F'/>);
-//
-//   it('should show the time', () => {
-//     const time = shallowCard.find('.time');
-//
-//     expect(time.text()).toEqual('9:40');
-//   });
-//
-//   it('should show current condition', () => {
-//     const cardCondition = shallowCard.find('.card-condition');
-//
-//     expect(cardCondition.text()).toEqual('sunny');
-//   });
-//
-//   it('should show an icon for the weather condition', () => {
-//     const cardIcon = shallowCard.find('img');
-//
-//     expect(cardIcon.prop('src')).toEqual('sunny.png');
-//   });
-//
-//   it('the icon should have an alt tag describing the condition', () => {
-//     const cardIcon = shallowCard.find('img');
-//
-//     expect(cardIcon.prop('alt')).toEqual('sunny');
-//   });
-//
-//   it('should show current temp', () => {
-//     const cardTemp = shallowCard.find('.temp');
-//
-//     expect(cardTemp.text()).toEqual('84 F');
-//   });
-//
-// });
