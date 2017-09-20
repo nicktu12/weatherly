@@ -49,5 +49,5 @@ const shallowCard = shallow(<Card hourlyTemp='87'
 
     expect(p.length).toEqual(3);
   });
-
+  
 });

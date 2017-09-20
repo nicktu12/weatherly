@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Current from '../lib/Components/Current';
-// import MockWeatherData from '../lib/Utilities/MockWeatherData';
 
 describe('DailyWeather', () => {
   let wrapper;

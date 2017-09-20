@@ -3,6 +3,7 @@ import Daily from '../lib/Components/Daily';
 import { shallow, mount } from 'enzyme';
 import mockData from '../lib/Utilities/MockWeatherData'
 
+
 describe ('Daily functionality', () => {
   let wrapper;
 
