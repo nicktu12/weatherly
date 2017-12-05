@@ -1,36 +1,31 @@
 # Weatherly
 
-## Team:
+Weatherly utilizes the WeatherUnderground api to display weather information based on a chosen location.
 
-Nick Teets & Sam Singer
+## Getting Started
 
-## Project Requirements
+Install npm to your local machine. Obtain an API key from WeatherUnderground. Clone down this repository to get started. 
 
-#### Goals
+### Installing
 
--Design weather app with UX and UI in mind
+Install all node modules with the following command:
 
--Utilize ReactJS to create a weather app that allows a user to select a city and see current, hourly and daily weather forecasts.
+```
+npm install
+```
 
--Implement working search trie for autocomplete functionality on a search bar
+Start the application on localhost:3000 with the following command:
 
--Prioritize TDD using Enzyme and Jest for testing in React
-
--Implement CSS preprocessor to style page
-
-#### Features
-
--Allow user to select city to see weather forecast
-
--Store last searched location in local storage to populate forecast data on page load
-
-#### Code Organization
-
--Implement different component classes for each section of the weather app
+```
+npm start
+```
 
 #### Testing
 
--Utilize TDD best practices while testing with Enzyme and Jest
+-Utilize TDD best practices while testing with Enzyme and Jest. Run the following command to execute the test suite:
+```
+npm run test
+```
 
 #### Built with:
 React
@@ -38,6 +33,15 @@ Enzyme
 Jest
 Scss
 Webpack
+
+## Authors
+
+* **Nick Teets** - [Github](https://github.com/nicktu12)
+* **Samuel Singer** - [Github](https://github.com/Cache123)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ### Design Wireframes 
 
